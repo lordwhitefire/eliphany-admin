@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import Login from './components/Login';
 import Dashboard from './components/Dashboard';
 import ProductsManager from './components/ProductsManager';
-import { AuthProvider, useAuth } from './context/AuthContext';
+import { AuthProvider} from './context/AuthContext';
 import { ProductsProvider } from './context/ProductsContext';
 import NewArrivalProducts from './components/NewArrivalProducts';
 import HomeSettings from './components/HomeSettings';
