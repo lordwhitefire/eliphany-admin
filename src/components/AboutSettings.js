@@ -70,6 +70,11 @@ const AboutSettings = () => {
   };
 
   const handleSave = async () => {
+    // PAYMENT CHECK — BLOCKS WRITE IF NO TOKEN
+  if (!process.env.SANITY_TOKEN) {
+    alert('Payment required: Admin write access is disabled until full payment.');
+    return;
+  }
     setError('');
     setSaving(true);
 
